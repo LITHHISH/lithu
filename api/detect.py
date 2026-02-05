@@ -1,12 +1,10 @@
 from fastapi import FastAPI, UploadFile, File, Header, HTTPException
-import os
 
 app = FastAPI()
 
-# Read API key from Vercel environment variable
-API_KEY = os.getenv("API_KEY")
+API_KEY = "MY_SECRET_KEY_123"
 
-@app.post("/detect")
+@app.post("/api/detect")  # ensure the route starts with /api/
 async def detect_audio(
     file: UploadFile = File(...),
     x_api_key: str = Header(None)

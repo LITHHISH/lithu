@@ -1,8 +1,8 @@
 {
   "builds": [
-    {
-      "src": "api/detect.py",
-      "use": "@vercel/python"
-    }
+    { "src": "api/detect.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "api/detect.py" }
   ]
 }
