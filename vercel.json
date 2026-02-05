@@ -6,3 +6,4 @@
     { "src": "/api/(.*)", "dest": "api/detect.py" }
   ]
 }
+

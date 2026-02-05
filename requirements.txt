@@ -27,9 +27,11 @@ spacy==3.7.5
 
 
 
-
-fastapi
 python-multipart
 fastapi
 uvicorn
 python-multipart
+torch
+librosa
+torchaudio
+tortoise-tts

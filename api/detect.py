@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File, Header, HTTPException
+ffrom fastapi import FastAPI, UploadFile, File, Header, HTTPException
 
 app = FastAPI()
 
@@ -11,7 +11,6 @@ async def detect_audio(
 ):
     if x_api_key != API_KEY:
         raise HTTPException(status_code=401, detail="Invalid API key")
-
     return {
         "status": "success",
         "filename": file.filename
