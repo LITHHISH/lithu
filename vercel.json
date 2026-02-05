@@ -1,0 +1,8 @@
+{
+  "builds": [
+    {
+      "src": "api/detect.py",
+      "use": "@vercel/python"
+    }
+  ]
+}

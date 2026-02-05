@@ -24,3 +24,9 @@ hjson
 psutil
 sounddevice
 spacy==3.7.5
+
+
+
+
+fastapi
+python-multipart
